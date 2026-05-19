@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biiag5h51p8ri"
+path="res://.godot/imported/THE LAST OF US Part II Ambient Music 🎵 Teenage Ellie (LoU 2 OST _ Soundtrack).mp3-dfb923c62aed731c490f7c91cc96d867.mp3str"
+
+[deps]
+
+source_file="res://all_resources/THE LAST OF US Part II Ambient Music 🎵 Teenage Ellie (LoU 2 OST _ Soundtrack).mp3"
+dest_files=["res://.godot/imported/THE LAST OF US Part II Ambient Music 🎵 Teenage Ellie (LoU 2 OST _ Soundtrack).mp3-dfb923c62aed731c490f7c91cc96d867.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

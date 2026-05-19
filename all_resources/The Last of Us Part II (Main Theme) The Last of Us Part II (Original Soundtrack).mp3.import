@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dr8rensg38xul"
+path="res://.godot/imported/The Last of Us Part II (Main Theme) The Last of Us Part II (Original Soundtrack).mp3-dc590cf63a8939ef5823c95b2c751bef.mp3str"
+
+[deps]
+
+source_file="res://all_resources/The Last of Us Part II (Main Theme) The Last of Us Part II (Original Soundtrack).mp3"
+dest_files=["res://.godot/imported/The Last of Us Part II (Main Theme) The Last of Us Part II (Original Soundtrack).mp3-dc590cf63a8939ef5823c95b2c751bef.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

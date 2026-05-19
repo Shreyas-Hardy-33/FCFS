@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0ngb7tetv0he"]
+
+[ext_resource type="Script" uid="uid://b8ngqluq86vmk" path="res://all_resources/transition_l_1l_2.gd" id="1_pg2ra"]
+[ext_resource type="FontFile" uid="uid://d4j0nhywmuvrj" path="res://all_resources/pressgothic.otf" id="1_ypj55"]
+
+[sub_resource type="Theme" id="Theme_pg2ra"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_pg2ra")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -9.0
+offset_top = -51.0
+offset_right = 1192.0
+offset_bottom = 661.0
+theme = SubResource("Theme_pg2ra")
+color = Color(0.672209, 0.483138, 0.784933, 1)
+
+[node name="restart2" type="Button" parent="."]
+offset_left = 105.0
+offset_top = 433.0
+offset_right = 368.0
+offset_bottom = 553.0
+text = "RELOAD LEVEL 1 STATE"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 202.0
+offset_top = 42.0
+offset_right = 950.0
+offset_bottom = 210.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_ypj55")
+theme_override_fonts/bold_font = ExtResource("1_ypj55")
+theme_override_font_sizes/bold_italics_font_size = 0
+theme_override_font_sizes/italics_font_size = 0
+theme_override_font_sizes/normal_font_size = 80
+theme_override_font_sizes/bold_font_size = 0
+text = "PLAYER IS CURRENTLY IN THE WAITING STATE.
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="restart" type="RichTextLabel" parent="."]
+offset_left = 136.0
+offset_top = 319.0
+offset_right = 463.0
+offset_bottom = 422.0
+theme_override_fonts/normal_font = ExtResource("1_ypj55")
+theme_override_font_sizes/normal_font_size = 50
+text = "Let him restart?"
+metadata/_edit_use_anchors_ = true
+
+[node name="resume" type="RichTextLabel" parent="."]
+offset_left = 568.0
+offset_top = 328.0
+offset_right = 1020.0
+offset_bottom = 447.0
+theme_override_fonts/normal_font = ExtResource("1_ypj55")
+theme_override_font_sizes/normal_font_size = 30
+text = "OR...let him go to the next level??"
+metadata/_edit_use_anchors_ = true
+
+[node name="resume2" type="Button" parent="."]
+offset_left = 598.0
+offset_top = 433.0
+offset_right = 861.0
+offset_bottom = 553.0
+text = "RESUME EXECUTION"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 568.0
+offset_top = 160.0
+offset_right = 1038.0
+offset_bottom = 305.0
+scale = Vector2(2, 2)
+text = "(I/O event wait)"
+
+[connection signal="pressed" from="restart2" to="." method="_on_restart_2_pressed"]
+[connection signal="pressed" from="resume2" to="." method="_on_resume_2_pressed"]

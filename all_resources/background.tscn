@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://chhgji3qjy54"]
+
+[ext_resource type="AudioStream" uid="uid://biiag5h51p8ri" path="res://all_resources/THE LAST OF US Part II Ambient Music 🎵 Teenage Ellie (LoU 2 OST _ Soundtrack).mp3" id="1_oabld"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_oabld")
+autoplay = true
+parameters/looping = true
