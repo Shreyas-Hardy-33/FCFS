@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1r2cvrqclq3e"]
+
+[ext_resource type="Script" uid="uid://82anr6h5fxao" path="res://all_resources/pause_menu.gd" id="1_n35la"]
+
+[node name="Pause_menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_n35la")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1384.0
+offset_bottom = 781.0
+color = Color(0.06879827, 0.06879828, 0.06879828, 1)
+
+[node name="Resume" type="Button" parent="."]
+offset_left = 282.0
+offset_top = 148.0
+offset_right = 687.0
+offset_bottom = 364.0
+text = "RESUME"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 316.0
+offset_top = 88.0
+offset_right = 1383.0
+offset_bottom = 201.0
+text = "PROCESS IS CURRENTLY IN WAITING STATE
+
+"
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]

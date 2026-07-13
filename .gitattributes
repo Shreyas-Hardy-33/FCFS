@@ -1,0 +1,9 @@
+.godot filter=lfs diff=lfs merge=lfs -text
+all_resources filter=lfs diff=lfs merge=lfs -text
+export_presets filter=lfs diff=lfs merge=lfs -text
+FCFS_FIGHTER.console filter=lfs diff=lfs merge=lfs -text
+FCFS_FIGHTER filter=lfs diff=lfs merge=lfs -text
+project filter=lfs diff=lfs merge=lfs -text
+GTA[[:space:]]5[[:space:]]wasted[[:space:]]death[[:space:]]screen[[:space:]]meme filter=lfs diff=lfs merge=lfs -text
+.godot.zip filter=lfs diff=lfs merge=lfs -text
+.exe filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsfqrqu0hjuwg"]
+
+[ext_resource type="AudioStream" uid="uid://dr8rensg38xul" path="res://all_resources/The Last of Us Part II (Main Theme) The Last of Us Part II (Original Soundtrack).mp3" id="1_e0u7o"]
+[ext_resource type="Script" uid="uid://cmgbh24t1qbk3" path="res://all_resources/audio_stream_player_2d.gd" id="2_yrwi3"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_e0u7o")
+script = ExtResource("2_yrwi3")

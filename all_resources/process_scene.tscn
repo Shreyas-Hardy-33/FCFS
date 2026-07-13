@@ -1,0 +1,121 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbklfy1robfv1"]
+
+[ext_resource type="FontFile" uid="uid://d4j0nhywmuvrj" path="res://all_resources/pressgothic.otf" id="1_balse"]
+[ext_resource type="Script" uid="uid://by8lsu5f2kah6" path="res://all_resources/process_scene.gd" id="1_uoi4w"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uoi4w")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 648.0
+color = Color(0.103743516, 0.10374353, 0.103743516, 1)
+
+[node name="continue" type="Button" parent="."]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 474.0
+offset_right = 503.0
+offset_bottom = 499.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_balse")
+text = "CONTINUE"
+
+[node name="Process1" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 78.0
+offset_right = 140.0
+offset_bottom = 222.5
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Process1"]
+layout_mode = 2
+size_flags_stretch_ratio = 5.44
+theme_override_constants/separation = 7
+
+[node name="process_name" type="Label" parent="Process1/VBoxContainer"]
+layout_mode = 2
+text = "Process P1
+"
+horizontal_alignment = 1
+
+[node name="AT" type="Label" parent="Process1/VBoxContainer"]
+layout_mode = 2
+text = "Arrival Time : "
+
+[node name="AT1" type="LineEdit" parent="Process1/VBoxContainer"]
+layout_mode = 2
+
+[node name="Process2" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 78.0
+offset_right = 492.0
+offset_bottom = 211.0
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Process2"]
+layout_mode = 2
+size_flags_stretch_ratio = 5.44
+theme_override_constants/separation = 7
+
+[node name="process_name" type="Label" parent="Process2/VBoxContainer"]
+layout_mode = 2
+text = "Process P2
+"
+horizontal_alignment = 1
+
+[node name="AT" type="Label" parent="Process2/VBoxContainer"]
+layout_mode = 2
+text = "Arrival Time : "
+
+[node name="AT2" type="LineEdit" parent="Process2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Process3" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 715.0
+offset_top = 78.0
+offset_right = 824.5
+offset_bottom = 212.0
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Process3"]
+layout_mode = 2
+size_flags_stretch_ratio = 5.44
+theme_override_constants/separation = 7
+
+[node name="process_name" type="Label" parent="Process3/VBoxContainer"]
+layout_mode = 2
+text = "Process P3
+"
+horizontal_alignment = 1
+
+[node name="AT" type="Label" parent="Process3/VBoxContainer"]
+layout_mode = 2
+text = "Arrival Time : "
+
+[node name="AT3" type="LineEdit" parent="Process3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Warning" type="Label" parent="."]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 330.0
+offset_right = 773.0
+offset_bottom = 487.0
+horizontal_alignment = 1
+
+[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]
+[connection signal="text_submitted" from="Process1/VBoxContainer/AT1" to="." method="_on_at_1_text_submitted"]
+[connection signal="text_changed" from="Process2/VBoxContainer/AT2" to="." method="_on_at_2_text_changed"]
+[connection signal="text_submitted" from="Process2/VBoxContainer/AT2" to="." method="_on_at_2_text_submitted"]
+[connection signal="text_submitted" from="Process3/VBoxContainer/AT3" to="." method="_on_at_3_text_submitted"]

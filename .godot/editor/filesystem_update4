@@ -1,0 +1,9 @@
+res://all_resources/level_3.tscn
+res://all_resources/last_boss.tscn
+res://all_resources/last_boss.gd
+res://all_resources/character_body_2d.gd
+res://all_resources/level_3.gd
+res://all_resources/global.gd
+res://all_resources/character_body_2d.tscn
+res://all_resources/enemy.gd
+res://all_resources/world.tscn
